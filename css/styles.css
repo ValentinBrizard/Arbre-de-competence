@@ -7,6 +7,10 @@
     font-style: normal;
 }
 
+#logo {
+height:"50px";
+}
+
 html {
     background-color: #333;
     
