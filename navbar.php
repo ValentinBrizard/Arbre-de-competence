@@ -5,7 +5,7 @@
             <li class="menu-item dropdown">
                 <a href="#" class="menu-link">Affinités</a>
                 <div class="dropdown-content">
-                    <a href="forestier.html">Forestier</a>
+                    <a href="forestier.php">Forestier</a>
                     <a href="#">Berserker</a>
                 </div>
             </li>
