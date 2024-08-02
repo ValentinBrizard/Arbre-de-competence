@@ -1,11 +1,11 @@
-// JavaScript pour gérer le menu déroulant
 document.addEventListener('DOMContentLoaded', function() {
-    const dropdowns = document.querySelectorAll('.dropdown');
-    dropdowns.forEach(dropdown => {
-        dropdown.addEventListener('click', function(event) {
-            event.preventDefault();
-            let dropdownContent = this.querySelector('.dropdown-content');
-            dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
-        });
+    const dropdown = document.querySelector('.dropdown');
+    dropdown.addEventListener('click', function(event) {
+        const dropdownContent = this.querySelector('.dropdown-content');
+        if (dropdownContent.style.display === 'block') {
+            dropdownContent.style.display = 'none';
+        } else {
+            dropdownContent.style.display = 'block';
+        }
     });
 });
