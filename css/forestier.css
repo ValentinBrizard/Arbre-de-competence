@@ -1,0 +1,44 @@
+
+body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden; /* Empêche le défilement si nécessaire */
+            background-color: black;
+        }
+
+
+.hover-darken {
+            transition: filter 0.3s ease-in-out; /* Transition douce pour l'assombrissement */
+        }
+
+        .hover-darken:hover {
+            filter: brightness(0.7); /* Réduit la luminosité à 70% */
+        }
+
+        image {
+          transition: filter 0.3s ease-in-out;
+        }
+        
+        image:hover {
+          filter: brightness(0.7); /* Réduit la luminosité à 70% */
+        }
+
+        /* Style pour la pop-up */
+        .popup {
+            position: absolute;
+            display: none; /* Masqué par défaut */
+            background-color: white;
+            padding: none;
+            margin: none;
+            z-index: 1000;
+            pointer-events: none; /* Pour que la pop-up ne bloque pas les interactions */
+            background: none;
+          
+        }
+      
+svg {
+            display: block;
+            margin: 0 auto;
+        }
