@@ -1,7 +1,7 @@
 /* Style pour l'effet parallax */
 .parallax {
     /* Chemin de l'image ajustable */
-    background-image: url('chemin-vers-ton-image.jpg');
+    background-image: url('./img/Hero.png');
     /* Hauteur de la section */
     height: 500px; 
     /* Création de l'effet parallax */
