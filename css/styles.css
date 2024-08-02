@@ -7,6 +7,10 @@
     font-style: normal;
 }
 
+html {
+    background-color: #333;
+}
+
 /* Réinitialisation basique et styles de la navbar */
 body, ul, li, a {
     margin: 0;
