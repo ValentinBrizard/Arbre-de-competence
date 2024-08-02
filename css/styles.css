@@ -1,8 +1,8 @@
 /*Navbar */
 
 @font-face {
-    font-family: 'Morris';
-    src: url('../fonts/MorrisRomanBlack.otf') format('otf'), 
+    font-family: 'MorrisRomanBlack';
+    src: url('./fonts/MorrisRomanBlack.otf') format('otf'), 
     font-weight: normal;
     font-style: normal;
 }
@@ -19,7 +19,7 @@ body, ul, li, a {
 
 /* styles.css */
 body {
-    font-family: 'Morris', serif;
+    font-family: 'MorrisRomanBlack', serif;
     background-color: #f4f4f4;
     color: #333;
 }
