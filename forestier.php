@@ -58,6 +58,7 @@ svg {
 
 
 <body>
+    <?php include 'navbar.php'; ?>
   
   <div class="popup" id="popup">
     <!-- Image de la pop-up (sera mise à jour dynamiquement) -->
