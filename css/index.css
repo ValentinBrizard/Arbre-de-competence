@@ -1,7 +1,7 @@
 /* Style pour l'effet parallax */
 .parallax {
     /* Chemin de l'image ajustable */
-    background-image: url('./img/Hero.png');
+    background-image: url('../img/Hero.png');
     /* Hauteur de la section */
     height: 500px; 
     /* Création de l'effet parallax */
@@ -13,6 +13,19 @@
     filter: blur(8px);
     /* Ajustement du flou pour ne pas déborder */
     margin: -8px;
+}
+
+/* Réajuster l'arrière-plan */
+.parallax::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: inherit;
+    background-attachment: fixed;
+    background-position: inherit;
+    background-repeat: inherit;
+    background-size: inherit;
+    filter: blur(8px);
 }
 
 
