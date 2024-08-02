@@ -12,7 +12,6 @@
     /* Filtre flou */
     filter: blur(8px);
     /* Ajustement du flou pour ne pas déborder */
-    margin: -8px;
 }
 
 /* Réajuster l'arrière-plan */
