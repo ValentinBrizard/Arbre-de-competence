@@ -37,7 +37,10 @@ body {
 
 .navbar-container {
     display: flex;
+    align-items: center;
     justify-content: center; /* Centre les éléments de navigation */
+    height: 100%;
+    padding-bottom: 10px;
 }
 
 .menu {
