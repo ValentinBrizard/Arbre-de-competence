@@ -1,5 +1,12 @@
 /*Navbar */
 
+@font-face {
+    font-family: 'Morris';
+    src: url('./fonts/MorrisRomanBlack.otf') format('otf'), 
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* Réinitialisation basique et styles de la navbar */
 body, ul, li, a {
     margin: 0;
@@ -12,7 +19,7 @@ body, ul, li, a {
 
 /* styles.css */
 body {
-    font-family: 'Times New Roman', serif; /* Un choix classique qui évoque le vieux temps */
+    font-family: 'Morris', serif;
     background-color: #f4f4f4;
     color: #333;
 }
