@@ -1,4 +1,4 @@
-/*Page d'accueil */
+/*Navbar */
 
 /* Réinitialisation basique et styles de la navbar */
 body, ul, li, a {
@@ -10,57 +10,71 @@ body, ul, li, a {
     
 }
 
+/* styles.css */
 body {
-    background-color: #555;
+    font-family: 'Times New Roman', serif; /* Un choix classique qui évoque le vieux temps */
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 .navbar {
-    background-color: black;
-    font-family: Arial, sans-serif;
+    background-color: #333;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 .navbar-container {
     display: flex;
-    justify-content: left;
-    align-items: center;
-    height: 60px;
-    padding: 0 20px;
+    justify-content: center; /* Centre les éléments de navigation */
 }
 
 .menu {
-    display: flex;
+    list-style-type: none;
+    padding: 0;
 }
 
 .menu-item {
-    position: relative;
-    padding: 10px 15px;
+    display: inline-block;
+    margin-right: 20px; /* Espace entre les éléments du menu */
 }
 
 .menu-link {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
     color: white;
     font-size: 16px;
+    border: none;
+    background: linear-gradient(145deg, #5a3921, #846c48); /* Gradient pour un effet plus stylisé */
+    border-radius: 4px; /* Bords arrondis */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.menu-link:hover, .menu-link:focus {
+    background: linear-gradient(145deg, #846c48, #5a3921); /* Inverse le gradient pour l'interaction */
+    color: #fff;
 }
 
 .dropdown-content {
-    display: none; /* Cache le contenu déroulant par défaut */
+    display: none;
     position: absolute;
-    background-color: black;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
-.dropdown:hover .dropdown-content {
-    display: block; /* Affiche le contenu déroulant au survol ou au clic */
-}
-
-
 .dropdown-content a {
-    color: white;
+    color: black;
     padding: 12px 16px;
-    text-align: center;
+    text-align: left;
     display: block;
+    text-decoration: none;
 }
 
 .dropdown-content a:hover {
-    background-color: #555;
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; /* Affiche le menu déroulant au survol */
 }
