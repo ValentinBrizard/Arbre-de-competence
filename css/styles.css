@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: 'Morris';
-    src: url('./fonts/MorrisRomanBlack.otf') format('otf'), 
+    src: url('../fonts/MorrisRomanBlack.otf') format('otf'), 
     font-weight: normal;
     font-style: normal;
 }
