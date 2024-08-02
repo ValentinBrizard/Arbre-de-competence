@@ -10,7 +10,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     /* Filtre flou */
-    filter: blur(8px);
+    filter: blur(2px);
     /* Ajustement du flou pour ne pas déborder */
 }
 
