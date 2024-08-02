@@ -68,22 +68,45 @@ body {
     display: none;
     position: absolute;
     background-color: #fff;
+    border: 2px solid #846c48; /* Bordure stylisée */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
+    opacity: 0; /* Prépare l'élément pour une transition d'opacité */
+    transition: opacity 0.5s ease, visibility 0.5s;
+    visibility: hidden; /* Cache le dropdown initialement */
 }
 
 .dropdown-content a {
-    color: black;
+    color: #5a3921;
     padding: 12px 16px;
     text-align: left;
     display: block;
     text-decoration: none;
+    background: #f4f4f4; /* Arrière-plan légèrement différent pour les liens */
+    transition: background-color 0.3s ease;
 }
 
 .dropdown-content a:hover {
-    background-color: #ddd;
+    background-color: #e0d7c5; /* Couleur sur le survol */
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+    opacity: 1; /* Rend le dropdown entièrement opaque lors du survol */
+    visibility: visible; /* Assure que le dropdown est visible lors du survol */
 }
 
+/* Transition douce pour le dropdown */
 .dropdown:hover .dropdown-content {
-    display: block; /* Affiche le menu déroulant au survol */
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+/* Styles pour les éléments spécifiques au dropdown */
+.dropdown-content::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    border-width: 0 10px 10px 10px;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
 }
