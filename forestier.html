@@ -7,52 +7,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/forestier.css">
     <title>Forestier</title>
     <style>
-
-body, html {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            height: 100%;
-            overflow: hidden; /* Empêche le défilement si nécessaire */
-            background-color: black;
-        }
-
-
-.hover-darken {
-            transition: filter 0.3s ease-in-out; /* Transition douce pour l'assombrissement */
-        }
-
-        .hover-darken:hover {
-            filter: brightness(0.7); /* Réduit la luminosité à 70% */
-        }
-
-        image {
-          transition: filter 0.3s ease-in-out;
-        }
-        
-        image:hover {
-          filter: brightness(0.7); /* Réduit la luminosité à 70% */
-        }
-
-        /* Style pour la pop-up */
-        .popup {
-            position: absolute;
-            display: none; /* Masqué par défaut */
-            background-color: white;
-            padding: none;
-            margin: none;
-            z-index: 1000;
-            pointer-events: none; /* Pour que la pop-up ne bloque pas les interactions */
-            background: none;
-          
-        }
-      
-svg {
-            display: block;
-            margin: 0 auto;
-        }
         
     </style>
 </head>
@@ -62,10 +19,13 @@ svg {
    <nav class="navbar">
     <div class="navbar-container">
         <ul class="menu">
+            <li class="menu-item home">
+                <a href="index.html" class="home-link">Accueil</a>
+            </li>
             <li class="menu-item dropdown">
                 <a href="#" class="menu-link">Affinités</a>
                 <div class="dropdown-content">
-                    <a href="forestier.php">Forestier</a>
+                    <a href="forestier.html">Forestier</a>
                     <a href="#">Berserker</a>
                 </div>
             </li>
