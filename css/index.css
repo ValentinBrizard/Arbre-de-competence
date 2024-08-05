@@ -50,16 +50,7 @@ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4),
 /*Cards Parallax*/
 
 
-body{
-  display:flex;
-  margin:0;
-  padding:0;
-  min-height: 100vh;
-  background: #444;
-  justify-content: center;
-  align-items: center;
-  font-family: arial;
-}
+
 
 .container{
   width: 1000px;
