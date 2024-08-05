@@ -56,14 +56,6 @@ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4),
   font-family: consolas;
 }
 
-body
-{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background: #1d061a
-}
 
 .container
 {
