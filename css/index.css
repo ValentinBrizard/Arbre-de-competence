@@ -84,6 +84,7 @@ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4),
 }
 
 .container .card:hover .face.face1{
+  margin-right: 50px;
   transform: translateY(0);
   box-shadow:
     inset 0 0 60px whitesmoke,
@@ -135,6 +136,7 @@ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4),
 }
 
 .container .card .face.face2{
+   margin-right: 50px;
    position: relative;
    background: whitesmoke;
    display: flex;
