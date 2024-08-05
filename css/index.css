@@ -18,7 +18,7 @@ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4),
     background-repeat: no-repeat;
     background-size: cover;
     /* Filtre flou */
-    filter: blur(2px);
+    filter: blur(0px);
     /* Ajustement du flou pour ne pas déborder */
 }
 
@@ -53,7 +53,7 @@ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4),
 
 
 .container{
-  width: 1000px;
+  width: 100%;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -197,7 +197,6 @@ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4),
   align-items: center;
   flex-wrap: wrap;
   padding: 40px 0;
-  background-color: #333;
 }
 
 .container .box
