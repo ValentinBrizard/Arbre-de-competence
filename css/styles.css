@@ -54,7 +54,6 @@ body {
     align-items: center;
     justify-content: flex-start; /* Centre les éléments de navigation */
     height: 100%;
-    padding-bottom: 10px;
 }
 
 .menu {
