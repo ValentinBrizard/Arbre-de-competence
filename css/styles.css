@@ -42,10 +42,14 @@ body {
 }
 
 .navbar {
-    height: 80px;
-    background-color: #333;
-   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-    font-family: consolas;
+  height: 80px;
+  background-color: #333;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  font-family: consolas;
+  top: 0;
+  z-index: 1000;
+  position: fixed;
+  width: 100%;
 }
 
 
