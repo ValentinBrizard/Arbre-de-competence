@@ -16,8 +16,6 @@ h1{
 
 /* Style pour l'effet parallax */
 .parallax {
-    /* Chemin de l'image ajustable */
-    background-image: url('../img/Hero.png');
     /* Hauteur de la section */
     height: 1000px; 
     /* Création de l'effet parallax */
@@ -25,8 +23,7 @@ h1{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* Filtre flou */
-    filter: blur(0px);
+ 
     /* Ajustement du flou pour ne pas déborder */
 }
 
