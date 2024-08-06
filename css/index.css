@@ -156,8 +156,7 @@ h1{
 
 .container .card:hover .face.face2{
     transform: translateY(0);
-
-
+    height: auto;
 }
 
 .container .card .face.face2 .content p, a{
