@@ -81,7 +81,7 @@ body {
 }
 
 .home-link:hover, .menu-link:hover, .menu-link:focus {
-    background: linear-gradient(145deg, #846c48, #5a3921); /* Inverse le gradient pour l'interaction */
+    background: linear-gradient(145deg, #d67400, #f7e1a1) /* Inverse le gradient pour l'interaction */
     color: #fff;
 }
 
