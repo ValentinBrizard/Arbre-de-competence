@@ -45,6 +45,7 @@ body {
     height: 80px;
     background-color: #333;
    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    font-family: consolas;
 }
 
 
