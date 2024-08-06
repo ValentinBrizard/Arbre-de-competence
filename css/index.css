@@ -193,7 +193,15 @@ height:50px;
 
 .chapitres
 {
-  background-color:#333;
+  width:100%;
+  position: relative;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 40px 0;
+            
 }
 
 .container
