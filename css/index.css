@@ -19,7 +19,7 @@ h1{
     /* Chemin de l'image ajustable */
     background-image: url('../img/Hero.png');
     /* Hauteur de la section */
-    height: 700px; 
+    height: 1000px; 
     /* Création de l'effet parallax */
     background-attachment: fixed;
     background-position: center;
