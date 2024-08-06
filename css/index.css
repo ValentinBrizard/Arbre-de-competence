@@ -114,12 +114,12 @@ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4),
  
 }
 
-.container .card .face.face1 .content i{
-  font-size: 3em;
-  color: white;
-  display: inline-block;
-   
-}
+.container .card .face.face1 .content .imgpara{
+    font-size: 3em;
+    color: white;
+    display: inline-block;
+     
+  }
 
 .container .card .face.face1 .content h3{
   font-size: 1em;
