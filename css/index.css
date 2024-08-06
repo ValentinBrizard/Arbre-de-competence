@@ -15,10 +15,8 @@ h1{
 }
 
 
-.hero {
-width: 100%;
-height: 100%;
-position: relative;           
+body {
+background-image: url("../img/Hero.png");
 }
 
 /* Style pour l'effet parallax */
