@@ -240,7 +240,7 @@ height:50px;
   width: 50%;
   height: 100%;
   text-decoration: none;
-  background: #e2f157;
+  background: linear-gradient(315deg, #fffb03, #ff7300);
   border-radius: 8px;
   transform: skewX(15deg);
   transition: 0.5s;
@@ -254,11 +254,11 @@ height:50px;
   left: 50;
   width: 50%;
   height: 100%;
-  background: #e37933;
+  background: linear-gradient(315deg, #fffb03, #ff7300);
   border-radius: 8px;
   transform: skewX(15deg);
   transition: 0.5s;
-  filter: blur(30px);
+  
 }
 
 .container .box:hover:before,
