@@ -69,7 +69,7 @@ body {
     margin-right: 20px; /* Espace entre les éléments du menu */
 }
 
-.home-link, .menu-link {
+.uniquenav-link, .menu-link {
     display: block;
     padding: 10px 15px;
     text-decoration: none;
@@ -80,7 +80,7 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-.home-link:hover, .menu-link:hover, .menu-link:focus {
+.uniquenav-link:hover, .menu-link:hover, .menu-link:focus {
     background: linear-gradient(145deg, #d67400, #f7e1a1); /* Inverse le gradient pour l'interaction */
     color: #fff;
 }
