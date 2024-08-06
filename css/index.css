@@ -22,33 +22,6 @@ h1{
 }
 
 
-/* Style pour l'effet parallax */
-.parallax {
-    /* Hauteur de la section */
-    height: 1000px; 
-    /* Création de l'effet parallax */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
- 
-    /* Ajustement du flou pour ne pas déborder */
-}
-
-/* Réajuster l'arrière-plan */
-.parallax::before {
-    content: "";
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background-image: inherit;
-    background-attachment: fixed;
-    background-position: inherit;
-    background-repeat: inherit;
-    background-size: inherit;
-    filter: blur(8px);
-}
-
-
 
 /* Style pour la bande colorée */
 .navbar-color-band {
