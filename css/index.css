@@ -11,7 +11,7 @@ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4),
     /* Chemin de l'image ajustable */
     background-image: url('../img/Hero.png');
     /* Hauteur de la section */
-    height: 1500px; 
+    height: 700px; 
     /* Création de l'effet parallax */
     background-attachment: fixed;
     background-position: center;
