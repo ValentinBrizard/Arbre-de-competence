@@ -14,20 +14,8 @@ h1{
             flex-wrap:wrap;
 }
 
-.parallax-container {
-    position: relative;
-    height: 1000px; 
-    overflow: hidden;
-}
-
 .parallax-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-    transform: translateY(0); /* Initialiser la position */
-    will-change: transform; /* Optimisation pour l'animation */
+postion:fixed;
 }
 
 
