@@ -15,7 +15,9 @@ h1{
 }
 
 .parallax-image {
-postion:fixed;
+position:fixed;
+width: 100%;
+height: 1000px;
 }
 
 
