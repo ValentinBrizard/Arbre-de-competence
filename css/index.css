@@ -49,6 +49,7 @@ filter: blur(2px);
 
 .container .card{
   position: relative;
+            overflow: hidden;
 }
 
 .container .card .face{
@@ -59,7 +60,7 @@ filter: blur(2px);
 }
 
 .container .card .face.face1{
-  position: relative;
+  position: absolute;
   background: #333;
   display: flex;
   justify-content: center;
@@ -71,7 +72,7 @@ filter: blur(2px);
 
 .container .card:hover .face.face1{
   margin-right: 50px;
-  transform: translateY(0);
+   transform: translateY(0) scale(1.05);
   box-shadow:inset 0 0 60px whitesmoke,
   inset 20px 0 80px #e1be59,
   inset -20px 0 80px #d67400,
@@ -120,7 +121,7 @@ filter: blur(2px);
 
 .container .card .face.face2{
    margin-right: 50px;
-   position: relative;
+   position: absolute;
    background: whitesmoke;
    display: flex;
    align-items: center;
