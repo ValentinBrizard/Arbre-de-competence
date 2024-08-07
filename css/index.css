@@ -127,6 +127,14 @@ filter: blur(2px);
   color: whitesmoke; 
   box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
 }
+
+.cards-wrapper {
+    width: 100%;
+    overflow: hidden; /* Cache tout débordement des cartes */
+    height: 200px; /* Hauteur fixe de la section des cartes */
+    margin-bottom: 20px; /* Espace entre les cartes et la section suivante */
+}
+
 .imgpara{
 height:50px;
 }
