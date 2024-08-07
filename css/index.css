@@ -131,6 +131,12 @@ filter: blur(2px);
 .imgpara{
 height:50px;
 }
+
+.card {
+height: 400px;
+}
+
+
 /*Cards Après Parallax*/
 *
 {
