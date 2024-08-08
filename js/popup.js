@@ -7,14 +7,17 @@ document.addEventListener("DOMContentLoaded", () => {
         image.addEventListener("mouseenter", (e) => {
             const imgSrc = e.target.getAttribute("data-popup-src");
             popupImage.src = imgSrc;
-            const rect = e.target.getBoundingClientRect();
-            popup.style.top = `${rect.bottom + window.scrollY}px`;
-            popup.style.left = `${rect.left + window.scrollX}px`;
             popup.style.display = "block";
         });
 
         image.addEventListener("mouseleave", () => {
             popup.style.display = "none";
+        });
+
+        image.addEventListener("mousemove", (e) => {
+            const offset = 10; // Décalage pour éviter que le popup ne recouvre le curseur
+            popup.style.top = `${e.pageY + offset}px`;
+            popup.style.left = `${e.pageX + offset}px`;
         });
     });
 });
