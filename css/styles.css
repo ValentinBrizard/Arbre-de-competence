@@ -8,11 +8,6 @@
 }
 
 
-  .stop-scroll {
-            height: 50vh; /* Zone où le défilement sera bloqué */
-            background-color: lightcoral;
-        }
-
 .logo-navbar {
     height:100%;
     align-content: center;
