@@ -1,27 +1,20 @@
- // Fonction pour montrer la pop-up avec une image spécifique
-        function showPopup(event, imageUrl) {
-            const popup = document.getElementById('popup');
-            const popupImage = document.getElementById('popup-image');
-            popupImage.src = imageUrl; // Met à jour l'image de la pop-up
-            popup.style.display = 'block';
-            positionPopup(event);
-        }
+document.addEventListener("DOMContentLoaded", () => {
+    const images = document.querySelectorAll(".popup-trigger"); // Images qui déclenchent les popups
+    const popup = document.getElementById("popup");
+    const popupImage = document.getElementById("popup-image");
 
-        // Fonction pour cacher la pop-up
-        function hidePopup() {
-            const popup = document.getElementById('popup');
-            popup.style.display = 'none';
-        }
-
-        // Fonction pour positionner la pop-up
-        function positionPopup(event) {
-            const popup = document.getElementById('popup');
-            const offset = 10; // Décalage de la pop-up par rapport à la souris
-            popup.style.left = event.pageX + offset + 'px';
-            popup.style.top = event.pageY + offset + 'px';
-        }
-
-        // Écouteur pour ajuster la position de la pop-up lors du déplacement de la souris
-        document.querySelectorAll('.hover-darken').forEach(image => {
-            image.addEventListener('mousemove', positionPopup);
+    images.forEach(image => {
+        image.addEventListener("mouseenter", (e) => {
+            const imgSrc = e.target.getAttribute("data-popup-src");
+            popupImage.src = imgSrc;
+            const rect = e.target.getBoundingClientRect();
+            popup.style.top = `${rect.bottom + window.scrollY}px`;
+            popup.style.left = `${rect.left + window.scrollX}px`;
+            popup.style.display = "block";
         });
+
+        image.addEventListener("mouseleave", () => {
+            popup.style.display = "none";
+        });
+    });
+});
