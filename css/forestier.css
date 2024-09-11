@@ -1,0 +1,61 @@
+
+body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #333;
+        }
+.navbar {
+            box-shadow:
+            0 2px 4px rgba(0, 0, 0, 0.4),
+            0px 1px 2px rgba(0,255,255,0.5), 
+            0px 2px 4px rgba(0,255,255,0.5), 
+            0px 4px 8px rgba(0,255,255,0.5), 
+            0px 8px 16px rgba(0,255,255,0.5);
+}
+
+
+.hover-darken {
+            transition: filter 0.3s ease-in-out; /* Transition douce pour l'assombrissement */
+        }
+
+        .hover-darken:hover {
+            filter: brightness(0.7); /* Réduit la luminosité à 70% */
+        }
+
+        image {
+          transition: filter 0.3s ease-in-out;
+        }
+        
+        image:hover {
+          filter: brightness(0.7); /* Réduit la luminosité à 70% */
+        }
+
+        /* Style pour la pop-up */
+        .popup {
+            position: absolute;
+            display: none; /* Masqué par défaut */
+            background-color: white;
+            padding: none;
+            margin: none;
+            z-index: 1000;
+            pointer-events: none; /* Pour que la pop-up ne bloque pas les interactions */
+            background: none;
+          
+        }
+
+/*//////////////////////*/
+
+.svg-container svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.svg-container {
+    width: 100%;
+    overflow: hidden;
+}

@@ -1,0 +1,238 @@
+/*Navbar */
+
+@font-face {
+    font-family: 'MorrisRomanBlack';
+    src: url('./fonts/MorrisRomanBlack.otf') format('otf'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.logo-navbar {
+    height:100%;
+    align-content: center;
+    margin-left: 20px;
+    margin-right: 50px;
+}
+
+.logo {
+height: 50px;
+}
+
+html {
+    background-color: #333;
+    
+}
+
+/* Réinitialisation basique et styles de la navbar */
+body, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    
+}
+
+/* styles.css */
+body {
+    font-family: 'MorrisRomanBlack', serif;
+    color: #333;
+    background-color: #333;
+}
+
+.navbar {
+  height: 80px;
+  background-color: #333;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  font-family: consolas;
+  top: 0;
+  z-index: 1000;
+  position: fixed;
+  width: 100%;
+}
+
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Centre les éléments de navigation */
+    height: 100%;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.menu-item {
+    display: inline-block;
+    margin-right: 20px; /* Espace entre les éléments du menu */
+}
+
+.uniquenav-link, .menu-link {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    background: linear-gradient(145deg, #5a3921, #846c48);
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.uniquenav-link:hover, .menu-link:hover, .menu-link:focus {
+    background: linear-gradient(145deg, #d67400, #f7e1a1); /* Inverse le gradient pour l'interaction */
+    color: #fff;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 2px solid #846c48; /* Bordure stylisée */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    opacity: 0; /* Prépare l'élément pour une transition d'opacité */
+    transition: opacity 0.5s ease, visibility 0.5s;
+    visibility: hidden; /* Cache le dropdown initialement */
+}
+
+.dropdown-content a {
+    color: #5a3921;
+    padding: 12px 16px;
+    text-align: left;
+    display: block;
+    text-decoration: none;
+    background: #f4f4f4; /* Arrière-plan légèrement différent pour les liens */
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: #e0d7c5; /* Couleur sur le survol */
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+    opacity: 1; /* Rend le dropdown entièrement opaque lors du survol */
+    visibility: visible; /* Assure que le dropdown est visible lors du survol */
+}
+
+/* Transition douce pour le dropdown */
+.dropdown:hover .dropdown-content {
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+/* Styles pour les éléments spécifiques au dropdown */
+.dropdown-content::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    border-width: 0 10px 10px 10px;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+}
+
+/* Effet glowing */
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 5px white;
+    }
+    50% {
+        box-shadow: 0 0 20px white;
+    }
+    100% {
+        box-shadow: 0 0 5px white;
+    }
+}
+
+.glow-effect {
+    animation: glow 1.5s infinite;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.glow-effect:hover {
+    box-shadow: 0 0 20px 5px white;
+}
+
+/*/////////////////////////*/
+
+/*FOOTER*/
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    padding-top: 200px;
+    position: absolute;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.footer-section h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #444;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+
